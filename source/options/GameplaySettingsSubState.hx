@@ -46,8 +46,16 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 			'If checked, notes go Down instead of Up, simple enough.', //Description
 			'downScroll', //Save data variable name
 			'bool', //Variable type
-			false); //Default value
+			false); //Default value 
 		addOption(option);
+		
+		var option:Option = new Option
+      ('Botplay',
+      'if you know botplay is chart',
+      'botplay',
+      'bool',
+      true);
+    addOption(option);
 
 		var option:Option = new Option('Middlescroll',
 			'If checked, your notes get centered.',
